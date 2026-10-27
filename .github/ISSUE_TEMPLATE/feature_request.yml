@@ -1,0 +1,27 @@
+name: 功能建议
+description: 说明你想让助手完成什么
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: scenario
+    attributes:
+      label: 使用场景
+      description: 你在什么情况下需要这个能力，现在是怎么绕过去的
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 期望的做法
+      description: 有具体的接口或交互想法写在这里，没有也可以
+    validations:
+      required: false
+
+  - type: textarea
+    id: boundary
+    attributes:
+      label: 是否涉及不可逆操作
+      description: 支付、删除、发送、好友确认这类动作，请说明场景
+    validations:
+      required: false
